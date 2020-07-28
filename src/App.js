@@ -1,12 +1,9 @@
 import React from 'react';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <header>
-      <p>
-        Edit <code>App.js</code> and save to reload
-      </p>
-    </header>
+    <Home />
   );
 }
 
