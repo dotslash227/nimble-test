@@ -2,6 +2,7 @@ import React from 'react';
 import {Table, TableBody, TableCell, TableRow, Paper, Collapse, makeStyles, Box} from '@material-ui/core';
 import ModalBox from '../components/ModalBox';
 import {NoteIcon, ScorecardIcon, PlusSign, NimbleIcon} from '../ui-kit/icons'
+import getMonths from '../utils/getMonths';
 
 const useRowStyles = makeStyles({
     root: {
@@ -23,17 +24,7 @@ export default function Row(props){
     const toggle = (application=null) =>{           
         if(application) setApplication(application);        
         setOpenModal(!openModal);        
-    }
-
-    function getMonths(d1){
-        let d2 = new Date();
-        let months = 0;
-        d1 = new Date(d1);
-        months = (d2.getFullYear() - d1.getFullYear()) * 12;
-        months -= d1.getMonth();
-        months += d2.getMonth();
-        return months <= 0 ? 0 : months;
-    }
+    }    
 
     return(
         <>        
