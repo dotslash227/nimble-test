@@ -35,9 +35,9 @@ export default function Row(props){
             <TableCell align="right">{row.applications.length}</TableCell>
             <TableCell align="right">{getMonths(row.profile.updated)} months ago</TableCell>
             <TableCell align="right"><NoteIcon /> {row.note_count}</TableCell>            
-            <TableCell><NimbleIcon /> {row.profile.nimble_score}</TableCell>
-            <TableCell><ScorecardIcon />  {row.scorecard_count}</TableCell>
-            <TableCell><PlusSign /></TableCell>            
+            <TableCell align="right"><NimbleIcon /> {row.profile.nimble_score}</TableCell>
+            <TableCell align="right"><ScorecardIcon />  {row.scorecard_count}</TableCell>
+            <TableCell align="right"><PlusSign /></TableCell>            
         </TableRow>
         <TableRow style={{border:"none"}}>
             <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
