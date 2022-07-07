@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "body-scroll-lock": "^3.0.3",
-    "moment": "^2.27.0",
+    "moment": "^2.29.4",
     "styled-components": "^5.1.1"
   }
 }
